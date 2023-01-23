@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Tightenco\Ziggy\Ziggy;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,10 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('app/index');
-});
+})
+    ->name('app.index');
+
+Route::get('/test', function () {
+    return Inertia::render('app/test');
+})
+    ->name('app.test');

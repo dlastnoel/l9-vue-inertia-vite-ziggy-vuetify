@@ -1,5 +1,6 @@
 <template>
-  <div>Hello Earth</div>
+  <p>Hello from index</p>
+  <Link :href="route('app.test')"> LINK TO TEST </Link>
 </template>
 
 <script>
